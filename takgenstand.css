@@ -1,0 +1,279 @@
+/* TAK FOR DIN DONATION */
+
+.tak-side {
+  max-width: 1140px;
+  margin: 25px auto 65px;
+  padding: 0 20px;
+  color: #002e4b;
+}
+
+/* STOR HVID BOKS */
+
+.tak-kort {
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  min-height: 680px;
+  padding: 50px 45px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+/* OVERSKRIFT */
+
+.tak-overskrift {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tak-overskrift h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #002e4b;
+  margin-bottom: 18px;
+}
+
+.tak-overskrift p {
+  max-width: 960px;
+  margin: 0 auto;
+
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #002e4b;
+}
+
+/* DONATIONSOVERSIGT */
+
+.tak-indhold {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tak-indhold h2 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* PRODUKT - TO KOLONNER */
+
+.tak-produkt {
+  display: grid;
+  grid-template-columns: 325px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* LYSERØD BILLEDBAGGRUND */
+
+.tak-billede-baggrund {
+  width: 100%;
+  height: 260px;
+
+  background-color: #fbeff3;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HVID BILLEDBOKS */
+
+.tak-billede {
+  width: 75%;
+  height: 180px;
+
+  background-color: #ffffff;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tak-billede img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+}
+
+/* PRODUKTINFORMATION */
+
+.tak-produkt-info {
+  padding-top: 2px;
+}
+
+.tak-produkt-info h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* PINK PRODUKTNAVN */
+
+.tak-produkt-navn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tak-produkt-navn span {
+  background-color: #fbeff3;
+  border-radius: 10px;
+
+  padding: 12px 15px;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: #002e4b;
+}
+
+.tak-produkt-navn i {
+  color: #ec0046;
+  font-size: 28px;
+}
+
+/* KNAP NEDERST */
+
+.tak-bund {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 45px;
+}
+
+.nyt-oenske-knap {
+  background-color: #fff34d;
+  color: #002e4b;
+
+  border-radius: 9px;
+  padding: 15px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nyt-oenske-knap:hover {
+  background-color: #f3e83b;
+  transform: translateY(-2px);
+}
+
+.nyt-oenske-knap i {
+  font-size: 18px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .tak-kort {
+    padding: 40px 30px 30px;
+  }
+
+  .tak-overskrift h1 {
+    font-size: 34px;
+  }
+
+  .tak-overskrift p {
+    font-size: 20px;
+  }
+
+  .tak-produkt {
+    grid-template-columns: 280px 1fr;
+    gap: 25px;
+  }
+
+  .tak-produkt-navn span {
+    font-size: 20px;
+  }
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .tak-side {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+
+  .tak-kort {
+    min-height: auto;
+    padding: 35px 20px 25px;
+  }
+
+  /* Overskrift */
+
+  .tak-overskrift {
+    margin-bottom: 35px;
+  }
+
+  .tak-overskrift h1 {
+    font-size: 27px;
+    line-height: 1.3;
+  }
+
+  .tak-overskrift p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Produkt */
+
+  .tak-indhold h2 {
+    font-size: 20px;
+  }
+
+  .tak-produkt {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .tak-billede-baggrund {
+    height: 260px;
+  }
+
+  .tak-billede {
+    max-width: 250px;
+  }
+
+  .tak-produkt-info h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .tak-produkt-navn span {
+    font-size: 18px;
+  }
+
+  .tak-produkt-navn i {
+    font-size: 24px;
+  }
+
+  /* Knap */
+
+  .tak-bund {
+    padding-top: 45px;
+  }
+
+  .nyt-oenske-knap {
+    width: 100%;
+    font-size: 15px;
+  }
+}

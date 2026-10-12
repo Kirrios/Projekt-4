@@ -3,13 +3,13 @@ const email = document.querySelector("#email");
 const fejlbesked = document.querySelector("#fejlbesked");
 
 formular.addEventListener("submit", function (event) {
-  // Forhindrer siden i at genindlæse
+  // Forhindrer formularen i at genindlæse siden
   event.preventDefault();
 
-  // Henter brugerens mail
+  // Henter brugerens mailadresse
   const emailAdresse = email.value.trim();
 
-  // Kontrollerer om mailen er gyldig
+  // Kontrollerer mailadressen
   if (!email.checkValidity() || emailAdresse === "") {
     fejlbesked.textContent = "Indtast venligst en gyldig mailadresse.";
 
@@ -17,15 +17,9 @@ formular.addEventListener("submit", function (event) {
     return;
   }
 
-  // Fjerner fejlbesked
+  // Fjerner eventuelle fejlbeskeder
   fejlbesked.textContent = "";
 
-  // Midlertidig bekræftelse
-  alert(
-    "Tak for din donation! " +
-      "Dette er en demonstration. " +
-      "Der er ikke sendt en QR-kode til " +
-      emailAdresse +
-      ".",
-  );
+  // Går videre til takkesiden
+  window.location.href = "takgenstand.html";
 });
