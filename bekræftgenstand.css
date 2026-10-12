@@ -1,0 +1,467 @@
+/* BEKRÆFT DONATION */
+
+.bekraeft-side {
+  max-width: 1120px;
+  margin: 25px auto 70px;
+  padding: 0 20px;
+  color: #002e4b;
+}
+
+/* TOPLINJE */
+
+.top-linje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tilbage-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #002e4b;
+}
+
+.tilbage-link:hover {
+  color: #ec0046;
+}
+
+/* TRININDIKATOR */
+
+.trin-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.trin-cirkel {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #ec0046;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #ec0046;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trin.aktiv {
+  font-weight: 700;
+}
+
+.trin.aktiv .trin-cirkel {
+  background-color: #ec0046;
+  color: #ffffff;
+}
+
+.trin-streg {
+  width: 100px;
+  height: 1px;
+  background-color: #ec0046;
+  margin-top: 13px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/* OVERSKRIFT */
+
+.bekraeft-overskrift {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.bekraeft-overskrift h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bekraeft-overskrift p {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* HOVEDLAYOUT */
+
+.bekraeft-grid {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 35px;
+  align-items: stretch;
+}
+
+/* FÆLLES KORT */
+
+.donation-oversigt,
+.aflevering-kort {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 35px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+.donation-oversigt h2,
+.aflevering-kort h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* VENSTRE KORT */
+
+.oversigt-billede {
+  background-color: #fbeff3;
+  border-radius: 10px;
+  height: 255px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sko-billede {
+  width: 75%;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sko-billede img {
+  width: 95%;
+  max-height: 170px;
+  object-fit: contain;
+}
+
+.donation-oversigt h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.oversigt-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+  margin: 15px 0 25px;
+}
+
+/* AFLEVERINGSDETALJER */
+
+.oversigt-detalje {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.detalje-ikon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fbeff3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ec0046;
+  font-size: 17px;
+}
+
+.oversigt-detalje p {
+  font-size: 12px;
+}
+
+.oversigt-detalje strong {
+  font-size: 13px;
+}
+
+/* PINK BESKED */
+
+.oversigt-besked {
+  background-color: #fbeff3;
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.oversigt-besked > i {
+  color: #ec0046;
+  font-size: 28px;
+}
+
+.oversigt-besked h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.oversigt-besked p {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* HØJRE KORT */
+
+.aflevering-kort {
+  display: flex;
+  flex-direction: column;
+}
+
+.aflevering-kort form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formular-gruppe {
+  margin-bottom: 25px;
+}
+
+.felt-overskrift {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+/* AFLEVERINGSSTED */
+
+.afleveringssted-felt {
+  border: 1px solid #ec0046;
+  min-height: 58px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 19px;
+}
+
+.afleveringssted-felt i {
+  color: #ec0046;
+  font-size: 20px;
+}
+
+/* EMAIL FELT */
+
+.email-felt {
+  border: 1px solid #ec0046;
+  min-height: 58px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-felt i {
+  color: #707580;
+  font-size: 20px;
+}
+
+.email-felt input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  color: #002e4b;
+}
+
+.email-felt input::placeholder {
+  color: #cccccc;
+}
+
+.email-felt:focus-within {
+  outline: 2px solid #ec0046;
+  outline-offset: 2px;
+}
+
+.hjaelpetekst {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.fejlbesked {
+  color: #c10037;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+/* PAKKEGUIDE */
+
+.pakke-gruppe {
+  margin-top: 20px;
+}
+
+.pakke-guide {
+  background-color: #eff4fc;
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.pakke-guide p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pakke-guide p + p {
+  margin-top: 15px;
+}
+
+/* BEKRÆFTELSE NEDERST */
+
+.formular-bund {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.qr-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.qr-info i {
+  color: #006eff;
+  font-size: 14px;
+}
+
+.qr-info p {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* GUL KNAP */
+
+.bekraeft-knap {
+  background-color: #fff34d;
+  color: #002e4b;
+
+  border: none;
+  border-radius: 9px;
+  padding: 16px 23px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bekraeft-knap:hover {
+  background-color: #f3e83b;
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  .bekraeft-grid {
+    grid-template-columns: 35% 1fr;
+    gap: 20px;
+  }
+
+  .donation-oversigt,
+  .aflevering-kort {
+    padding: 25px;
+  }
+
+  .formular-bund {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* MOBIL */
+
+@media (max-width: 750px) {
+  .bekraeft-side {
+    margin-top: 20px;
+  }
+
+  .top-linje {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .tilbage-link {
+    font-size: 16px;
+  }
+
+  .trin-container {
+    align-self: flex-end;
+  }
+
+  .bekraeft-overskrift h1 {
+    font-size: 28px;
+  }
+
+  .bekraeft-overskrift p {
+    font-size: 16px;
+  }
+
+  .bekraeft-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .donation-oversigt,
+  .aflevering-kort {
+    padding: 25px 20px;
+  }
+
+  .afleveringssted-felt {
+    font-size: 15px;
+  }
+
+  .email-felt input {
+    font-size: 15px;
+  }
+
+  .formular-bund {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bekraeft-knap {
+    width: 100%;
+  }
+}
