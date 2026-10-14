@@ -15,12 +15,13 @@ main {
     min-height: 100vh;
     
     padding: 2em 4em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 footer{
     background-color: #bc9d9d;
     box-shadow: 0px -7px 7px #3a2a1e40;
+    margin-bottom: -100%;
 }
 
 .index-layout {
@@ -338,7 +339,7 @@ a {
 
 .donerings-typer div {
     /* #fff9bc */
-    background-color: #8f8a57;
+    background-color: #FFF9BC;
     padding: 20px;
     margin: 10px;
     font-size: 30px;
@@ -401,4 +402,43 @@ margin: 2em;
 
 #go-back:hover {
   text-decoration: underline;
+}
+
+
+/* --- Opslag box --- */
+.postBox {
+    margin: 5em 0em;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px #57443540;
+    min-height: 80vh;
+}
+
+.imagePlaceholder {
+    margin: 1em;
+    float: left;
+    text-overflow: wrap;
+    max-width: 15em;
+    min-height: inherit;
+
+}
+.imagePlaceholder p {
+    color: #0000006E;
+}
+
+.imagePlaceholder__box {
+    padding: 3em;
+    background-color: #FAEFF2;
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: #EC0046;
+    color: #EC0046;
+    justify-self: left;
+}
+
+.postBox__questions {
+    margin: 5em;
+    min-width: max-content;
 }
