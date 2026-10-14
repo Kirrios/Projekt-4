@@ -7,35 +7,98 @@
     <link rel="stylesheet" href="style.css">
     <script src="java.js"></script>
 </head>
-<body>
+    <title>Mødrehjælpen - Donation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER / NAVIGATION -->
     <header>
-        <nav>
-            <p>HELLO!</p>
-        </nav>
-    </header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-    <main>
-
-        <h1>"Alt er værdsat."</h1>
-        <p>-Annemette, mor til 3</p>
-
-        <div class="donerings-typer">
-            <div>
-                <p>Doner Penge</p>
-            </div>
-            <div>
-                <p>Doner Genstande</p>
-            </div>
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
 
-    </main>
+        <!-- Mødrehjælpens logo -->
+        <a href="index.html" class="logo" aria-label="Mødrehjælpen forside">
+          <img src="billeder/logo.png" alt="Mødrehjælpens logo" />
+        </a>
 
-    <footer>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-    </footer>
-    
-</body>
+        <div class="nav-right">
+          <button class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <a href="#" class="support-button"> Støt nu </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- OVERSKRIFT -->
+      <section class="hero">
+        <div class="quote-symbol">“</div>
+
+        <h1>Alt er værdsat.</h1>
+
+        <p>- Annemette, mor til 3</p>
+      </section>
+
+      <!-- DONATIONSKORT -->
+      <section class="donation-container" aria-label="Vælg donationstype">
+        <!-- DONER PENGE -->
+        <a href="#" class="donation-card money-card">
+          <div class="card-top">
+            <div class="card-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+
+            <span class="arrow-button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </div>
+
+          <h2>Doner Penge</h2>
+        </a>
+
+        <!-- DONER GENSTAND -->
+        <a href="#" class="donation-card item-card">
+          <div class="card-top">
+            <div class="card-icon">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <span class="arrow-button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </div>
+
+          <h2>Doner Genstand</h2>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
