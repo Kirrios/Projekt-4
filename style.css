@@ -2,7 +2,6 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #f6f5eb;
   color: #002e4b;
-  min-height: 100vh;
 }
 
 
@@ -13,7 +12,6 @@ header {
 
 main {
     min-height: 100vh;
-    
     padding: 2em 4em;
     /* text-align: center; */
 }
@@ -405,23 +403,14 @@ margin: 2em;
 }
 
 
+/* --- Alex --- */
 /* --- Opslag box --- */
-.postBox {
-    margin: 5em 0em;
-    padding: 2em;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 7px 7px 7px #57443540;
-    min-height: 80vh;
-}
-
 .imagePlaceholder {
     margin: 1em;
     float: left;
     text-overflow: wrap;
     max-width: 15em;
-    min-height: inherit;
-
+    min-height:fit-content;
 }
 .imagePlaceholder p {
     color: #0000006E;
@@ -438,7 +427,15 @@ margin: 2em;
     justify-self: left;
 }
 
+.postBox {
+    margin: 5em 0em;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px #57443540;
+    min-height: 80vh;
+}
+
 .postBox__questions {
-    margin: 5em;
-    min-width: max-content;
+  min-width: max-content;
 }
