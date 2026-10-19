@@ -4,10 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../java.js"></script>
+    <link rel="stylesheet" href="./doner-penge.css">
+    <!-- <script src="../Doner-penge-js.js"></script> -->
+
+
+ <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 </head>
+
 <body>
+
+ <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="../billeder/logo.png" alt="Mødrehjælpens logo" />
+        </a>
+
+        <div class="nav-right">
+          <button class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <a href="donationpenge.html" class="support-button"> Støt nu </a>
+        </div>
+      </nav>
+    </header>
+
+    <button id="go-back">Gå tilbage</button>
+
+
+
+<div class="penge-donations-container-buttons">
+<div class="filter-buttons">
+    <button class="filter-btn active" data-filter="alt">Alt</button>
+
+    <button class="filter-btn" data-filter="0til100">0-100 kr</button>
+    <button class="filter-btn" data-filter="100til200">100-200 kr</button>
+    <button class="filter-btn" data-filter="200til300">200-300 kr</button>
+    <button class="filter-btn" data-filter="300til400">300-400 kr</button>
+  
+</div> 
+
+
+<div class="penge-donation-grid">
+
+    <div class="penge-item 0til100">
+<img src=".//Billeder-til-penge-donation/pink-cake.png" alt="Fødselsdagsgave"/>
+<p>Fødselsdagsgave: 100 kr</p>
+
+
+
+
+<div class="progress">
+  <div class="progress-done"></div>
+ </div>
+<div class="inputContainer">
+  <div>
+    <h3>Doner</h3>
+    <input class="input" type="number"/>
+  </div>
+  </div
+<div>
+    <h3>Fulde beløb</h3>
+    <input class="maxInput" type="number"/>
+  </div>
+   
+
+<!-- </div> -->
+
+
     
+
+ <div class="penge-item 200til300">
+<img src="./Billeder-til-penge-donation/blue-gift.png" alt="Fødselsdagsgave"/>
+    <p>Fødselsdagsgave: 300 kr</p>
+  </div> 
+
+  <!-- </div>    
+  <div class="progress">
+  <div class="progress-done"></div>
+</div>
+
+<div class="input-container">
+  <div>
+    <!-- <h3>Doner</h3> -->
+    <!-- <input class="input" type="number"/> -->
+  <!-- </div> -->
+
+  <!-- <h3>Max value</h3> -->
+    <!-- <input class="maxInput" type="number"/> -->
+<!-- </div> -->
+
+
+  
+    
+
+    
+ 
+
+
+     <div class="penge-item 0til100">
+<img src="./Billeder-til-penge-donation/blue-cake.png" alt="Fødselsdagsgave"/>
+<p>Fødselsdagsgave: 100 kr</p>
+</div>
+
+
+
+
+     <div class="penge-item 300til400">
+<img src="./Billeder-til-penge-donation/cristmas-gifts.png" alt="Julegaver"/>
+<p>julegaver: 300 kr</p>
+    </div>
+
+ <div class="penge-item 300til400">
+<img src="./Billeder-til-penge-donation/pink-present.png" alt="Fødselsdagsgave"/>
+<p>Fødselsdagsgave: 400 kr</p>
+    </div>
+
+ <div class="penge-item 200til300">
+<img src="./Billeder-til-penge-donation/green-present.png" alt="Julegaver"/>
+<p>Julegaver 250 kr</p>
+    </div>
+
+ <div class="penge-item 200til300">
+<img src="./Billeder-til-penge-donation/presents.png" alt="Fødselsdagsgaver"/>
+<p>Fødselsdagsgave: 200 kr</p>
+    </div>
+
+     <div class="penge-item 0til100">
+<img src="./Billeder-til-penge-donation/blue-gift-2.png" alt="Fødselsdagsgaver"/>
+<p>Fødesldagsgaver: 100 kr</p>
+    </div>
+
+ </div>
+</div>
+</div>
+</div>
+<script src="../Doner-penge-js.js" defer></script>
 </body>
 </html>
+
+
+</head>
+<body>
+ 
