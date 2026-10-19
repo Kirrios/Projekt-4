@@ -340,14 +340,14 @@ a {
 
 .donerings-typer div {
     /* #fff9bc */
-    background-color: #FFF9BC;
+     background-color: #FFF9BC;
     padding: 20px;
     margin: 10px;
     font-size: 30px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0px 7px 5px #3a2a1e40;
-}
+} 
 
 
 .text{
@@ -373,7 +373,7 @@ margin: 2em;
 
 .donations-container-buttons{
  max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
 justify-items: center;
 }
 
