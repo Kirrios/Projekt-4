@@ -359,7 +359,7 @@ a {
 margin: 2em;
 } 
 
-.go-back{
+#go-back{
   background: none;
   border: none;
   padding: 2em;
@@ -380,6 +380,7 @@ justify-items: center;
 .filter-buttons{
   margin-bottom: 50px;
 }
+
 .filter-btn{
   background-color: #ffffff;
   border: none;
