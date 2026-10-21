@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="opret-opslag.css">
+    <link rel="stylesheet" href="opret-opslag-knapper.css">
     <script src="donation-genstand.js"></script>
     <script src="opret-opslag.js"></script>
 
@@ -58,7 +58,7 @@
     <main>
         <div class="postBox">
             <p style="color: #0000006E; justify-self: center;">--- Opslag om tilskud ---</p>
-            <div>
+            <div class="button-grid">
                 <button id="button-1" class="choice-button-selected">Tilskud</button>
                 <button id="button-2" class="choice-button-unselected">Genstand</button>
             </div>
@@ -84,14 +84,14 @@
                 <form class="postBox__questions">
 
                     <h3>Hvad ønsker du penge til?</h3>
-                    <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                    <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
+                    <input class="postBox__questions__layout" type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
+                    <label class="postBox__questions__layout" for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
                     <br>
-                    <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                    <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
+                    <input class="postBox__questions__layout" type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
+                    <label class="postBox__questions__layout" for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
                     
                     <h3>Kategorier/priser</h3>
-                    <select name="Kategorier-tilskud">
+                    <select class="postBox__questions__layout" name="Kategorier-tilskud">
                         <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
                         <option value="meget billig">0 - 100 kr.</option> 
                         <option value="billig">100 - 200 kr.</option> 
@@ -101,14 +101,14 @@
                     </select>
 
                     <h3>Beskriv formål</h3>
-                    <input type="text" id="tilskud-formål" placeholder="Fx vinterjakke til min søn">
+                    <input class="postBox__questions__layout" type="text" id="tilskud-formål" placeholder="Fx vinterjakke til min søn">
                 
                     <h3>Ønsket beløb</h3>
-                    <input type="number" id="tilskud-kvote" placeholder="Beløb"> <span>kr.</span>
+                    <input class="postBox__questions__layout" type="number" id="tilskud-kvote" placeholder="Beløb"> <span>kr.</span>
 
 
                     <h3>Beksriv formål med ønsket</h3>
-                    <textarea rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
+                    <textarea class="postBox__questions__layout" rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
                 </form>
             </div>
 
@@ -118,14 +118,14 @@
                 <h2>Om dit opslag</h2>
                 <form class="postBox__questions">
                     <h3>Hvad ønsker du penge til?</h3>
-                    <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                    <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
+                    <input class="postBox__questions__layout" type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
+                    <label class="postBox__questions__layout" for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
                     <br>
-                    <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                    <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
+                    <input class="postBox__questions__layout" type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
+                    <label class="postBox__questions__layout" for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
                     
                     <h3>Kategorier/priser</h3>
-                    <select name="Kategorier-tilskud">
+                    <select class="postBox__questions__layout" name="Kategorier-tilskud">
                         <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
                         <option value="meget billig">0 - 100 kr.</option> 
                         <option value="billig">100 - 200 kr.</option> 
@@ -135,7 +135,7 @@
                     </select>
 
                         <h3>Størrelse</h3>
-                        <select name="Kategorier-tilskud">
+                        <select class="postBox__questions__layout" name="Kategorier-tilskud">
                             <option value="" style="color: #0000006E">-Vælg anledning-</option> 
                             <optgroup label="Sko størrelser">
                                 <option value="meget lille">25</option> 
@@ -159,7 +159,7 @@
                         </select>
 
                         <h3>Køn/tøjform</h3>
-                        <select>
+                        <select class="postBox__questions__layout">
                             <option value="" style="color: #0000006E;">-vælg køn-</option>
                             <option value="girl">Pige</option>
                             <option value="boy">Dreng</option>
@@ -167,7 +167,7 @@
                         </select>
 
                     <h3>Beksriv formål med ønsket</h3>
-                    <textarea rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
+                    <textarea class="postBox__questions__layout" rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
                 </form>
             </div>
 
