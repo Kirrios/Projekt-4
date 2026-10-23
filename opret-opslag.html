@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="opret-opslag-knapper.css">
-    <script src="donation-genstand.js"></script>
+    <link rel="stylesheet" href="opret-opslag-knapper-og-layout.css">
     <script src="opret-opslag.js"></script>
 
 
@@ -67,9 +66,7 @@
             <div class="form-grid">
                 <div class="imagePlaceholder">
                     <h2>Tilføj billede</h2>
-                    <div class="imagePlaceholder__box">
-                        <h2>Vælg billede</h2>
-                    </div>
+                    <img src="billeder/image-placeholder.png" class="imagePlaceholder__box">
                     <p>Vælg et af de illustrerede billeder, der passer bedst til dit ønske.</p>
                 </div>
 
@@ -80,13 +77,18 @@
                     <form>
 
                         <h3>Hvad ønsker du penge til?</h3>
-                        <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                        <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
+                        <label class="radio-style">En bestemt ting (fx vinterjakke eller sko)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
                         <br>
                         <br>
-                        <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                        <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
-                        
+
+                        <label class="radio-style">En særlig anledning (fx fødselsdag eller jul)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <h3>Kategorier/priser</h3>
                         <select class="postBox__questions__layout" name="Kategorier-tilskud">
                             <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
@@ -115,12 +117,17 @@
                     <h2>Om dit opslag</h2>
                     <form>
                         <h3>Hvad ønsker du penge til?</h3>
-                        <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                        <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
+                        <label class="radio-style">En bestemt ting (fx vinterjakke eller sko)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
                         <br>
                         <br>
-                        <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                        <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
+                        
+                        <label class="radio-style">En særlig anledning (fx fødselsdag eller jul)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
                         
                         <h3>Kategorier/priser</h3>
                         <select class="postBox__questions__layout" name="Kategorier-tilskud">
@@ -177,11 +184,5 @@
         
     </main>
 
-    <footer>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-    </footer>
 </body>
 </html>
