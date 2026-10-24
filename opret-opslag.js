@@ -47,7 +47,12 @@ window.addEventListener('load', function() {
     // --- go to image selector ---
     
         document.querySelector("img.imagePlaceholder__box").addEventListener("click", function(){
-            window.location = "opslag-billeder.html";
+            if (b1.className == "choice-button-unselected") {
+                // --- if u are in the "genstand":
+            window.location = "opslag-billeder-genstande.html";
+            } else {
+                window.location = "opslag-billeder-tilskud.html";
+            }
         });
 
 
