@@ -4,7 +4,7 @@ let container = document.querySelector(".genstande-donation-grid");
 container.addEventListener("click", function(event){
     // console.log(event.target, event.target.parentNode.classList.contains("genstande-item"))
     // --- if clicked element contains the class "genstande-item": ---
-    if (event.target.parentNode.classList.contains("genstande-item")) {
+    if (event.target.classList.contains("genstande-item")) {
         
         // --- to do: remove class item-selected, from all other items ---
         let list = document.querySelectorAll(".item-selected");
@@ -12,7 +12,7 @@ container.addEventListener("click", function(event){
             item.classList.remove("item-selected");
         };
         
-        event.target.parentNode.classList.add("item-selected");
+        event.target.classList.add("item-selected");
     };
 });
 
@@ -24,7 +24,7 @@ submitButton.addEventListener("click", function() {
     let selected = document.querySelector(".item-selected");
     if (selected != undefined) {
         // console.log( selected.querySelector("img").src );
-        localStorage.setItem("selectedItem", selected.querySelector("img").src);
+        localStorage.setItem("selectedItem", selected.src);
         window.location = "opret-opslag.html";
     }
 });

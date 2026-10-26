@@ -23,6 +23,7 @@ window.addEventListener('load', function() {
     }
 
 
+    
     b1.addEventListener('click', function() {
         c1.style.display = "block";
         c2.style.display = "none";
@@ -44,6 +45,8 @@ window.addEventListener('load', function() {
         localStorage.setItem("valgt-opslag", "genstand");
     });
     
+
+
     // --- go to image selector ---
     
         document.querySelector("img.imagePlaceholder__box").addEventListener("click", function(){
