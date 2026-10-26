@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Donér genstand - Mødrehjælpen</title>
+
+    <!-- Skrifttype -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../donationgenstand.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="billeder/logo.png" alt="Mødrehjælpens logo" />
+        </a>
+
+        <div class="nav-right">
+          <button class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <a href="donationpenge.html" class="support-button"> Støt nu </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="genstand-side">
+      <!-- Tilbage-knap -->
+      <a href="/genstand-donation/donation-genstand.html" class="tilbage-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        Tilbage til genstande
+      </a>
+
+      <!-- PRODUKT -->
+      <section class="produkt-container">
+        <!-- Venstre: produktbillede -->
+        <div class="produkt-billede">
+          <img
+            src="../genstand-donation/Billeder-til-doner-genstand/green-jacket.png"
+            alt="Vinterjakke til dreng"
+          />
+        </div>
+
+        <!-- Højre: produktinformation -->
+        <div class="produkt-info">
+          <h1>Vinterjakke til dreng</h1>
+
+          <p class="produkt-beskrivelse">
+           Vinterjekke til dreng på 6 år
+          </p>
+
+          <!-- Fire informationsbokse -->
+          <div class="info-grid">
+            <div class="info-boks">
+              <i class="fa-solid fa-shoe-prints"></i>
+
+              <div>
+                <h3>Størrelse</h3>
+                <p>Str. 116</p>
+              </div>
+            </div>
+
+            <div class="info-boks">
+              <i class="fa-solid fa-children"></i>
+
+              <div>
+                <h3>Alder</h3>
+                <p>6 år</p>
+              </div>
+            </div>
+
+            <div class="info-boks">
+              <i class="fa-regular fa-heart"></i>
+
+              <div>
+                <h3>Ønske til</h3>
+                <p>Dreng</p>
+              </div>
+            </div>
+
+            <div class="info-boks">
+              <i class="fa-regular fa-clock"></i>
+
+              <div>
+                <h3>Oprettet</h3>
+                <p>for 19 dage siden</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lyserød donationsbesked -->
+          <div class="donation-besked">
+            <i class="fa-regular fa-heart"></i>
+
+            <div>
+              <h3>Vær med til at opfylde et ønske</h3>
+
+              <p>
+                Din donation kan gøre en stor forskel for et barn og dets
+                familie
+              </p>
+            </div>
+          </div>
+
+          <!-- Donér nu -->
+
+          <a href="/bekreaft-genstande-mappe/dreng-jakke.html" class="doner-knap">
+            Donér nu
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <p class="knap-tekst">Du bliver guidet gennem de næste trin</p>
+        </div>
+      </section>
+
+      <!-- INFORMATIONSBOKSE NEDERST -->
+      <section class="ekstra-info">
+        <!-- Lyserød boks -->
+        <div class="ekstra-boks rosa-boks">
+          <div class="ekstra-ikon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div>
+            <h2>Gør en forskel for et barn i dag</h2>
+
+            <p>
+              Dine donerede genstande hjælper familier, der har brug for ekstra
+              støtte i en svær tid. Tak fordi du bidrager.
+            </p>
+          </div>
+        </div>
+
+        <!-- Lyseblå boks -->
+        <div class="ekstra-boks blaa-boks">
+          <div class="ekstra-ikon">
+            <i class="fa-solid fa-info"></i>
+          </div>
+
+          <div>
+            <h2>Hvad sker der, når du donerer?</h2>
+
+            <p>
+              Vi sørger for, at dine genstande kommer videre til familier, der
+              har brug for dem.
+
+              <a href="information.html"> Læs mere om donationer her </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

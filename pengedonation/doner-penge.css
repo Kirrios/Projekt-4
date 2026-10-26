@@ -155,16 +155,22 @@ justify-items: center;
 
 .penge-donation-grid{
   margin: 2em;
-  /* margin-bottom: 3em; */
+  margin-bottom: 3em;
  display: grid;
-grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 grid-template-rows:23em;
   gap: 25px;
- 
+ }
 
+.penge-donation-grid{
+  margin: 2em;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); 
+ /* grid-template-columns: repeat(4 fr);  */
+  gap: 25px;
  
-
 }
+
 p {
   font-size: 10px;
 }
@@ -196,7 +202,7 @@ display: none;
 }
 
 
-.progress{
+/* .progress{
   background-color: #ffffff;
   border-radius: 20px ;
   height: 18px;
@@ -211,11 +217,30 @@ display: none;
   transition: 1s ease 0.3s;
 
   
-}
+} */
 
 .inputContainer{
   display: flex;
-  width: 50%;
-  height: 40px;
-  justify-content: space-evenly;
+  width: 40%;
+  height: 20px;
+  /* justify-content: space-evenly; */
+}
+
+ .slider-base{
+    width: 170px;
+    height: 1em;
+    border: solid 1px #ec0046;
+    border-radius: 5px;
+    background-color: #fff;
+    }
+
+.slider-bar {
+    margin-bottom: 0.5em;
+    height: 1em;
+    border-radius: 2px 5px 5px 2px;
+    background-color: #ec0046;
+}
+
+  price{
+  font-size: 10px;
 }

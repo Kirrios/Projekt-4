@@ -1,0 +1,280 @@
+
+
+
+.container{
+background-color: #ffffff;
+padding: 10px;
+border-radius: 20px;
+margin-top: none;
+
+}
+
+h3{
+    font-size: 27px;
+    padding: none;
+    margin-left: 20px;
+}
+p{
+    font-size: 15px;
+    padding: none;
+    margin-left: 20px;
+}
+
+
+
+.choose-a-donation-amount{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 70px;
+
+  background-color: #ffffff;
+  padding: 10px;
+
+  border-radius: 20px;
+}
+.choose-a-donation-amount button{
+  /* background-color: #ffffff; */
+  border: 3px solid #EC0046;
+  border-radius: 20px;
+  padding: 5px 50px;
+  margin: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/* .choose-a-donation-amount button:active {
+    background-color: #EC0046;
+} */
+.buttonsForDonations{
+border-radius: 20px;
+display: grid;
+margin: 10px;
+gap: 30px;
+
+}
+
+.buttonsForDonations p{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+/* --- selecting items --- */
+.item-selected {
+  border: 2px solid #EC0046;
+  background-color: #EC0046;
+}
+
+
+
+
+
+
+.choice-button-selected {
+    background-color: #ec0046;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 1em 3em;
+    text-align: center;
+    border: solid 3px #ec0046;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.choice-button-unselected {
+    background-color: #ffffff;
+    text-decoration: none;
+     font-size: 20px;
+    display: inline-block;
+    padding: 1em 1em;
+    text-align: center;
+    border: solid 3px #ec0046;
+    border-radius: 20px;
+      margin: 15px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+   align-content: center;
+}
+
+
+
+
+/* bruges til at gemme (visuelt fjerne) de ting der ikke er valgt. */
+.hidden {
+display: none;
+}
+
+
+
+
+/* .button-box{
+    display: flexbox;
+  margin: 15px;
+
+}
+
+
+.kortButton{
+ background-color: #ffffff;
+  border: 3px solid #EC0046;
+  border-radius: 20px;
+  padding: 10px 0px;
+  margin: 10px;
+  font-size: 15px;
+  text-align: center; 
+  position: relative; 
+float: left;
+  width: 45%;
+
+}
+.mobilePayButton{
+background-color: #ffffff;
+  border: 3px solid #EC0046;
+  border-radius: 20px;
+  padding: 10px 0px;
+  margin: 10px;
+  font-size: 15px;
+  text-align: center;  
+    position: relative; 
+float: right;
+  width: 45%;
+
+}
+
+.emptySpace{
+background-color: none;
+padding: 20px;
+} */
+
+/* .betalingsmetiode-container {
+display:grid;
+grid-template-columns: 1fr 1fr;
+} */
+
+/* .betalingsmetiode-container button{
+  background-color: #ffffff;
+  border: 3px solid #EC0046;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 15px;
+  text-align: center;  
+} */
+
+
+
+
+/* kanppen uden rød farve der virkede i starten */
+
+/* .betalingsmetiode-container button :active {
+  background-color: #EC0046;
+} */
+
+
+/* #btnKort active {
+  background-color: #EC0046;
+} */
+
+/* .kortButton{
+    background-color: #EC0046;
+
+}
+
+.mobilePayButton{
+    background-color: aqua;
+} */
+
+
+
+
+
+
+
+.kortoplysinger1{
+display: grid;
+
+margin: 10px;
+}
+input{
+    border: 1px solid #b8b7b7;
+    border-radius: 20px;
+margin: 5px;
+padding: 10px;
+
+font-size: 15px;
+}
+
+.kortnummer2{
+    margin: 10px;
+    
+input{
+    border: 1px solid #b8b7b7;
+    border-radius: 20px;
+
+
+font-size: 15px;
+}
+}
+
+.personlige-oplysininger{
+    margin: 10px;
+}
+
+.email-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+}
+
+
+
+
+
+
+.mobilepay-container{
+display: flex;
+    background-color: #EFF4FC;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    
+
+}
+
+.input-mobilepay{
+    margin: 10px;
+
+}
+
+
+.input-mobilepay input{
+    width: 94%;
+padding-right: 10px;
+}
+
+.mobilepay-container img{
+
+    margin-left: 5px;
+    margin-right: 10px;
+    float: left;
+}
+.input-mobilepay p{
+    margin: 10px;
+}
+
+h3{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.bekraeft-knap{
+    float: right;
+    margin: 15px;
+}
