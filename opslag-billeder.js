@@ -25,6 +25,9 @@ submitButton.addEventListener("click", function() {
     if (selected != undefined) {
         // console.log( selected.querySelector("img").src );
         localStorage.setItem("selectedItem", selected.src);
+
+        // ---! ask for help !---
+        // submitButton.style.background_color:rgb(236, 0, 70);
         window.location = "opret-opslag.html";
     }
 });
