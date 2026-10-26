@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="opret-opslag-knapper-og-layout.css">
+    
+    
+    <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head>
+
+<body>
+
+ <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="billeder/logo.png" alt="Mødrehjælpens logo"/>
+        </a>
+
+        <div class="nav-right">
+          <a href="login.html" class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <a href="tilbage-til-mødrehjaelp-route.html" class="support-button">Hjem til mødrehjælp</a>
+        </div>
+      </nav>
+    </header>
+
+    <button id="go-back">Gå tilbage</button>
+
+
+<div class="postBox-images">
+    <div class="genstande-donation-grid image-grid-layout">
+
+        <div class="clothe">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/green-jacket.png" alt="jakke til dreng på 5 år"/>
+        </div>
+
+        <div class="sko">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/pink-shoes.png" alt="Sko til pige str.20"/>
+        </div>
+
+        <div class="things">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/carrier-cream.png" alt="Barnevogn"/>
+        </div>
+
+        <div class="toy">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/toy-stuffed-animal.png" alt="legetøj til en pige på 2 år"/>
+        </div>
+
+        <div class="toy">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/toy-boy.png" alt="legetøj til dreng på 7 år"/>
+        </div>
+
+        <div class="things">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/carrier-green.png" alt="Barnevogn"/>
+        </div>
+
+        <div class="clothe">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/pink-jacket.png" alt="jakke til pige på 9 år"/>
+        </div>
+
+        <div class="sko">
+            <img class="genstande-item" src="genstand-donation/Billeder-til-doner-genstand/blue-shoes.png" alt="Sko til dreng str. 28"/>
+        </div>
+    </div>
+
+    <br>
+
+    <button class="selection-button" id="brug-billede">Brug dette billede</button>
+</div>
+
+
+<script src="opslag-billeder.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+ .slider-base{
+    width: 200px;
+    height: 2em;
+    border: solid 1px #ec0046;
+    border-radius: 5px;
+    background-color: #fff;
+    }
+
+.slider-bar {
+    margin-bottom: 0.5em;
+    height: 2em;
+    border-radius: 2px 5px 5px 2px;
+    background-color: #ec0046;
+}

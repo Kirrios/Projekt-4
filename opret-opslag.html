@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    <link rel="stylesheet" href="opret-opslag-knapper-og-layout.css">
+    <script src="opret-opslag.js"></script>
 
 
     <title>Mødrehjælpen - Opret Opslag</title>
@@ -55,137 +56,127 @@
 
     <main>
         <div class="postBox">
-            <p style="color: #0000006E; justify-self: center;">--- Opslag om tilskud ---</p>
             <h2>Opret opslag</h2>
             <p>Fortæl os, hvad du har brug for, så andre kan hjælpe.</p>
-            
-            <br>
-
             <p>vælg mellem</p>
-            
-            <div class="imagePlaceholder">
-                <h2>Tilføj billede</h2>
-                <div class="imagePlaceholder__box">
-                    <h2>Vælg billede</h2>
-                </div>
-                <p>Vælg et af de illustrerede billeder, der passer bedst til dit ønske.</p>
+            <div class="button-grid">
+                <button id="button-1" class="choice-button-selected">Tilskud</button>
+                <button id="button-2" class="choice-button-unselected">Genstand</button>
             </div>
-
-            <!-- Tilskud -->
-
-             <div>
-                <h2>Om dit opslag</h2>
-                <form class="postBox__questions">
-
-                    <h3>Hvad ønsker du penge til?</h3>
-                    <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                    <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
-                    <br>
-                    <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                    <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
-                    
-                    <h3>Kategorier/priser</h3>
-                    <select name="Kategorier-tilskud">
-                        <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
-                        <option value="meget billig">0 - 100 kr.</option> 
-                        <option value="billig">100 - 200 kr.</option> 
-                        <option value="middel">200 - 300 kr.</option> 
-                        <option value="dyr">300 - 400 kr.</option> 
-                        <option value="meget dyr">400 - 500 kr.</option> 
-                    </select>
-
-                    <h3>Beskriv formål</h3>
-                    <input type="text" id="tilskud-formål" placeholder="Fx vinterjakke til min søn">
-                
-                    <h3>Ønsket beløb</h3>
-                    <input type="number" id="tilskud-kvote" placeholder="Beløb"> <span>kr.</span>
-
-
-                    <h3>Beksriv formål med ønsket</h3>
-                    <textarea rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
-                </form>
-             </div>
-
-
-             <br> <br>
-             <br> <br>
-             <br> <br>
-             <br> <br>
-
-             <p style="color: #0000006E; justify-self: center;">--- Opslag om genstand ---</p>
-            <h2>Opret opslag</h2>
-            <p>Fortæl os, hvad du har brug for, så andre kan hjælpe.</p>
-                
-                <br>
-
-                <p>vælg mellem</p>
-                
+            <div class="form-grid">
                 <div class="imagePlaceholder">
                     <h2>Tilføj billede</h2>
-                    <div class="imagePlaceholder__box">
-                        <h2>Vælg billede</h2>
-                    </div>
+                    <img src="billeder/image-placeholder.png" class="imagePlaceholder__box">
                     <p>Vælg et af de illustrerede billeder, der passer bedst til dit ønske.</p>
                 </div>
 
-                <!-- genstand -->
+                <!-- Tilskud -->
 
-                <h2>Om dit opslag</h2>
-                <form class="postBox__questions">
-                    <h3>Hvad ønsker du penge til?</h3>
-                    <input type="radio" id="tilskud-genstande" name="tilskud-type" value="tilskud-til-genstand">
-                    <label for="tilskud-til-genstand">En bestemt ting (fx vinterjakke eller sko)</label>
-                    <br>
-                    <input type="radio" id="tilskud-anledning"name="tilskud-type" value="tilskud-til-anledning">
-                    <label for="tilskud-til-anledning">En særlig anledning (fx fødselsdag eller jul)</label>
+                <div id="content-1">
+                    <h2>Om dit opslag</h2>
+                    <form>
+
+                        <h3>Hvad ønsker du penge til?</h3>
+                        <label class="radio-style">En bestemt ting (fx vinterjakke eller sko)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <br>
+
+                        <label class="radio-style">En særlig anledning (fx fødselsdag eller jul)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <h3>Kategorier/priser</h3>
+                        <select class="postBox__questions__layout" name="Kategorier-tilskud">
+                            <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
+                            <option value="meget billig">0 - 100 kr.</option> 
+                            <option value="billig">100 - 200 kr.</option> 
+                            <option value="middel">200 - 300 kr.</option> 
+                            <option value="dyr">300 - 400 kr.</option> 
+                            <option value="meget dyr">400 - 500 kr.</option> 
+                        </select>
+
+                        <h3>Beskriv formål</h3>
+                        <input class="postBox__questions__layout" type="text" id="tilskud-formål" placeholder="Fx vinterjakke til min søn">
                     
-                    <h3>Kategorier/priser</h3>
-                    <select name="Kategorier-tilskud">
-                        <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
-                        <option value="meget billig">0 - 100 kr.</option> 
-                        <option value="billig">100 - 200 kr.</option> 
-                        <option value="middel">200 - 300 kr.</option> 
-                        <option value="dyr">300 - 400 kr.</option> 
-                        <option value="meget dyr">400 - 500 kr.</option> 
-                    </select>
+                        <h3>Ønsket beløb</h3>
+                        <input class="postBox__questions__layout" type="number" id="tilskud-kvote" placeholder="Beløb"> <span>kr.</span>
 
-                        <h3>Størrelse</h3>
-                        <select name="Kategorier-tilskud">
-                            <option value="" style="color: #0000006E">-Vælg anledning-</option> 
-                            <optgroup label="Sko størrelser">
-                                <option value="meget lille">25</option> 
-                                <option value="lille">26</option> 
-                                <option value="mellem lille">27</option> 
-                                <option value="mellem">28</option> 
-                                <option value="mellem stor">29</option> 
-                                <option value="stor">30</option> 
-                                <option value="meget stor">31</option> 
-                                <option value="giga">32</option> 
-                            </optgroup>
-                            <optgroup label="Trøjer">
-                                <option value="extra extra small">XXS</option>
-                                <option value="extra small">XS</option>
-                                <option value="small">S</option>
-                                <option value="medium">M</option>
-                                <option value="large">L</option>
-                                <option value="extra large">XL</option>
-                                <option value="extra extra large">XXL</option>
-                            </optgroup>
+
+                        <h3>Beksriv formål med ønsket</h3>
+                        <textarea class="postBox__questions__layout" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
+                    </form>
+                </div>
+
+
+                    <!-- genstand -->
+                <div id="content-2" style="display: none;">
+                    <h2>Om dit opslag</h2>
+                    <form>
+                        <h3>Hvad ønsker du penge til?</h3>
+                        <label class="radio-style">En bestemt ting (fx vinterjakke eller sko)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <br>
+                        
+                        <label class="radio-style">En særlig anledning (fx fødselsdag eller jul)
+                            <input type="radio" id="tilskud-anledning" name="tilskud-type" value="tilskud-til-anledning">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <h3>Kategorier/priser</h3>
+                        <select class="postBox__questions__layout" name="Kategorier-tilskud">
+                            <option value="" style="color: #0000006E">-Vælg en prisgruppe-</option> 
+                            <option value="meget billig">0 - 100 kr.</option> 
+                            <option value="billig">100 - 200 kr.</option> 
+                            <option value="middel">200 - 300 kr.</option> 
+                            <option value="dyr">300 - 400 kr.</option> 
+                            <option value="meget dyr">400 - 500 kr.</option> 
                         </select>
 
-                        <h3>Køn/tøjform</h3>
-                        <select>
-                            <option value="" style="color: #0000006E;">-vælg køn-</option>
-                            <option value="girl">Pige</option>
-                            <option value="boy">Dreng</option>
-                            <option value="unisex">Unisex</option>
-                        </select>
+                            <h3>Størrelse</h3>
+                            <select class="postBox__questions__layout" name="Kategorier-tilskud">
+                                <option value="">-Vælg anledning-</option> 
+                                <optgroup label="Sko størrelser">
+                                    <option value="meget lille">25</option> 
+                                    <option value="lille">26</option> 
+                                    <option value="mellem lille">27</option> 
+                                    <option value="mellem">28</option> 
+                                    <option value="mellem stor">29</option> 
+                                    <option value="stor">30</option> 
+                                    <option value="meget stor">31</option> 
+                                    <option value="giga">32</option> 
+                                </optgroup>
+                                <optgroup label="Trøjer">
+                                    <option value="extra extra small">XXS</option>
+                                    <option value="extra small">XS</option>
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                    <option value="extra large">XL</option>
+                                    <option value="extra extra large">XXL</option>
+                                </optgroup>
+                            </select>
 
-                    <h3>Beksriv formål med ønsket</h3>
-                    <textarea rows="5" cols="50" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
-                </form>
-             </div>
+                            <h3>Køn/tøjform</h3>
+                            <select class="postBox__questions__layout">
+                                <option value="" style="color: #0000006E;">-vælg køn-</option>
+                                <option value="girl">Pige</option>
+                                <option value="boy">Dreng</option>
+                                <option value="unisex">Unisex</option>
+                            </select>
 
+                        <h3>Beksriv formål med ønsket</h3>
+                        <textarea class="postBox__questions__layout" placeholder="Beskriv kort, hvad du har brug for..."></textarea>
+                    </form>
+                </div>
+                <button class="selection-button">Opret opslag</button>
+            </div>
 
          </div>
 
@@ -194,11 +185,5 @@
         
     </main>
 
-    <footer>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-        <p>aerfgoiadfoighnaerioughnadr</p>
-    </footer>
 </body>
 </html>
