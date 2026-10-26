@@ -1,6 +1,6 @@
-document.getElementById("go-back").addEventListener("click", () => {
-  history.back();
-});
+// document.getElementById("go-back").addEventListener("click", () => {
+//   history.back();
+// });
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 const pengeItems = document.querySelectorAll(".penge-item");

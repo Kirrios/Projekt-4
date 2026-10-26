@@ -376,14 +376,12 @@ margin: 2em;
 }
 
 #go-back{
-  background: 00000000;
+  background-color: 00000000;
   border: none;
   
   color: #002E4B; 
   text-decoration: none; 
 } 
-
-
 
 .donations-container-buttons{
  max-width: 1140px;
