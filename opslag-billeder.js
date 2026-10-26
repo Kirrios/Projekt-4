@@ -27,7 +27,8 @@ submitButton.addEventListener("click", function() {
         localStorage.setItem("selectedItem", selected.src);
 
         // ---! ask for help !---
-        // submitButton.style.background_color:rgb(236, 0, 70);
+        submitButton.classList.remove(".brug-billede-inaktiv");
+        submitButton.classList.add(".brug-billede-aktiv");
         window.location = "opret-opslag.html";
     }
 });

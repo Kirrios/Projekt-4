@@ -199,14 +199,22 @@ display: none;
 
 .selection-button {
   background-color: #ffffff;
-  padding: 2em 1em;
+  padding: 1.5em 1em;
   border-radius: 20px;
   border: 2px solid #EC0046;
   float: right;
 }
+.selection-button:hover{
+  background-color: #EC0046;
+  padding: 1.5em 1em;
+  border-radius: 20px;
+  border: 2px solid #EC0046;
+  color: #ffffff;
+  float: right;
+}
 
 
-#brug-billede {
+.brug-billede-inaktiv {
   background-color: #ffffff;
   padding: 2em 3em;
   border-radius: 20px;
@@ -215,9 +223,12 @@ display: none;
 }
 
 /* --- ! This will be a "when image has been selected, the button will be red and pressable" kind of button !--- */
-#brug-billede:hover {
+.brug-billede-aktiv {
   background-color: #EC0046;
-  color: #ffffff;
+  padding: 2em 3em;
+  border-radius: 20px;
+  border: 2px solid #EC0046;
+  float: right;
 }
 
 
