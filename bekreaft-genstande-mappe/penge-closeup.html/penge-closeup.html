@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bekræft donation - Mødrehjælpen</title>
+
+    <!-- Skrifttype -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/bekræftgenstand.css" />
+    <link rel="stylesheet" href="Penge-donation.closeup.css"/>
+
+    <!-- JavaScript -->
+    <script src="../bekræftgenstand.js" defer></script>
+    <script src="penge-donation-closeup.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="../billeder/logo.png" alt="Mødrehjælpens logo" />
+        </a>
+
+        <div class="nav-right">
+          <button class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <a href="donationpenge.html" class="support-button"> Støt nu </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bekraeft-side">
+      <!-- TILBAGE OG PROGRESS BAR -->
+      <div class="top-linje">
+        <a href="donationgenstand.html" class="tilbage-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          Tilbage til donation
+        </a>
+
+        <!-- Trinindikator -->
+        <div class="trin-container">
+          <div class="trin">
+            <span class="trin-cirkel">1</span>
+            <span>Vælg donation</span>
+          </div>
+
+          <div class="trin-streg"></div>
+
+          <div class="trin aktiv">
+            <span class="trin-cirkel">2</span>
+            <span>Bekræft donation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OVERSKRIFT -->
+      <section class="bekraeft-overskrift">
+        <h1>Bekræft din donation</h1>
+
+        <p>Du er næsten færdig! Gennemgå oplysningerne, inden du bekræfter.</p>
+      </section>
+
+      <!-- TO KOLONNER -->
+      <section class="bekraeft-grid">
+        <!-- VENSTRE KOLONNE -->
+        <div class="donation-oversigt">
+          <h2>Din donation</h2>
+
+          <!-- Billede -->
+          <div class="oversigt-billede">
+            <div class="sko-billede">
+              <img src="/pengedonation/Billeder-til-penge-donation/blue-cake.png" alt="Fødesldagsgaver" />
+            </div>
+          </div>
+
+          <h3>Sko str. 20</h3>
+
+          <div class="oversigt-divider"></div>
+
+          
+
+          <!-- Pink besked -->
+          <div class="oversigt-besked">
+            <i class="fa-regular fa-heart"></i>
+
+            <div>
+              <h4>Din donation gør en forskel for et barn og dets familie.</h4>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- HØJRE KOLONNE -->
+       
+<div class="container">
+
+
+    <h3>Betalingsoplysninger</h3>
+    <p>Hvor meget vil du donere?</p>
+
+
+
+     
+        <div class= "choose-a-donation-amount ">
+            
+            <button class="buttonsForDonations">25 kr</button>
+            <button class="buttonsForDonations">50 kr</button>
+            <button class="buttonsForDonations">100 kr</button>  
+            <button class="buttonsForDonations">150 kr</button>
+            <button class="buttonsForDonations">200 kr</button>
+            <button class="buttonsForDonations">300 kr</button>
+            <button class="buttonsForDonations">Resterende beløb</button>
+        </div>
+        
+    <!-- <div class= "choose-a-donation-amount ">
+    
+  
+  <div class="buttonsForDonations"><button>25 kr</button> </div>
+
+  <div  class="buttonsForDonations"> <button>50 kr</button></div>
+
+  <button class="buttonsForDonations">100 kr</button>  
+  <button class="buttonsForDonations">150 kr</button>
+  <button class="buttonsForDonations">200 kr</button>
+    <button class="buttonsForDonations">300 kr</button>
+      <button class="buttonsForDonations">Resterende beløb</button>
+    </div> -->
+   
+
+     <div class="oversigt-divider"></div>
+
+
+<p>Vælge din betalingsmetode</p>
+
+<div class="betalingsmetiode-container">
+    <!-- <button  onclick="myFunction()">Kort</button>
+    <button  onclick="myFunctionTwo()">Mobilepay</button> -->
+
+    <!-- <button id="btnKort">Kort</button>
+    <button id="btnMobileP">Mobilepay</button>
+ -->
+<!-- 
+  <input type="button" id="btnKort" class="choice-button-selected">
+
+    <input type="button" id="btnMobilePay" class="choice-button-unselected">  -->
+<div class="button-grid">
+<button id="btnKort" class="choice-button-selected">Kort</button>
+<button id="btnMobilePay" class="choice-button-unselected">MobilePay</button>
+</div>
+</div>
+
+<div class="betalingsmetoder-store-container">
+
+
+<div class="kort" id="kort">
+
+<div class="kortoplysinger1">
+
+  <input
+       placeholder="Hvilken korttype bruger du?"
+        required
+     />
+
+<input
+ placeholder="Hvad er dit kortnummer?"
+ required
+/>
+</div>
+
+<div class="kortnummer2">
+
+    <input
+    placeholder="Mm"
+
+    required
+    />
+     <input
+    placeholder="År"
+
+    required
+    />
+     <input
+    placeholder="Cvc"
+
+    required
+    />
+</div>
+
+<div class="personlige-oplysininger">
+ <input
+    placeholder="Fornavn"
+
+    required
+    />
+     <input
+    placeholder="Efternavn"
+
+    required
+    />
+</div>
+<p>Hvor kan vi sende bekræftigelsen?</p>
+<div class="email-container">
+    <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Skriv din mail her"
+                  autocomplete="email"
+                  required
+                />
+</div>
+</div>
+
+<div class="mobile-pay" id="mobileP">
+
+
+
+
+
+
+<div class="mobilepay-container" id="mobilePay" style="display: none;">
+
+
+<div class="mobilepay-img">
+<img src="/billeder/image_14.png"
+</div>
+
+<div class="mobilepay-p">
+<p>Når du klikker på bekræft donation, bliver du sendt videre til MobilePay for at godkende betaling.</p>
+</div>
+
+</div>
+
+</div>
+<div class="input-mobilepay">
+
+    <h3>Telefonnummer</h3>
+    <input
+    placeholder="Telefonnummer"
+
+    required
+    
+    />
+   <p>Indtast nummeret, der er knyttet til MobilePay.</p> 
+
+   
+    <h3>Hvor kan vi sende bekræftigelsen?</h3>
+     <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Skriv din mail her"
+                  autocomplete="email"
+                  required
+                />
+
+
+
+
+
+</div>
+
+              <button type="submit" class="bekraeft-knap">
+                Bekræft donation
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+       
+        </div>
+
+
+</div>
+
+      </section>
+    </main>
+  </body>
+</html>

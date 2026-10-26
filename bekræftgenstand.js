@@ -20,6 +20,7 @@ formular.addEventListener("submit", function (event) {
   // Fjerner eventuelle fejlbeskeder
   fejlbesked.textContent = "";
 
-  // Går videre til takkesiden
-  window.location.href = "takgenstand.html";
+//  Går videre til takkesiden
+
+
 });

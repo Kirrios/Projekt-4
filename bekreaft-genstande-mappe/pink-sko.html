@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bekræft donation - Mødrehjælpen</title>
+
+    <!-- Skrifttype -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../bekræftgenstand.css" />
+
+    <!-- JavaScript -->
+    <script src="../bekræftgenstand.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="icon-button" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="icon-button" aria-label="Søg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="../billeder/logo.png" alt="Mødrehjælpens logo" />
+        </a>
+
+        <div class="nav-right">
+          <button class="icon-button" aria-label="Min profil">
+            <i class="fa-regular fa-user"></i>
+          </button>
+
+          <a href="donationpenge.html" class="support-button"> Støt nu </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bekraeft-side">
+      <!-- TILBAGE OG PROGRESS BAR -->
+      <div class="top-linje">
+        <a href="../donering-af-genstande-closeup.html/pink-sko-closeup.html" class="tilbage-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          Tilbage til donation
+        </a>
+
+        <!-- Trinindikator -->
+        <div class="trin-container">
+          <div class="trin">
+            <span class="trin-cirkel">1</span>
+            <span>Vælg donation</span>
+          </div>
+
+          <div class="trin-streg"></div>
+
+          <div class="trin aktiv">
+            <span class="trin-cirkel">2</span>
+            <span>Bekræft donation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OVERSKRIFT -->
+      <section class="bekraeft-overskrift">
+        <h1>Bekræft din donation</h1>
+
+        <p>Du er næsten færdig! Gennemgå oplysningerne, inden du bekræfter.</p>
+      </section>
+
+      <!-- TO KOLONNER -->
+      <section class="bekraeft-grid">
+        <!-- VENSTRE KOLONNE -->
+        <div class="donation-oversigt">
+          <h2>Din donation</h2>
+
+          <!-- Billede -->
+          <div class="oversigt-billede">
+            <div class="sko-billede">
+              <img src="../genstand-donation/Billeder-til-doner-genstand/pink-shoes.png" alt="sko til pige" />
+            </div>
+          </div>
+
+          <h3>Sko str. 20</h3>
+
+          <div class="oversigt-divider"></div>
+
+          <!-- Afleveringssted -->
+          <div class="oversigt-detalje">
+            <div class="detalje-ikon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <p>Afleveringssted</p>
+              <strong>City Shoppen, 5000 Odense</strong>
+            </div>
+          </div>
+
+          <!-- Afleveringsfrist -->
+          <div class="oversigt-detalje">
+            <div class="detalje-ikon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div>
+              <p>Aflever senest</p>
+              <strong>Inden for 7 dage</strong>
+            </div>
+          </div>
+
+          <div class="oversigt-divider"></div>
+
+          <!-- Pink besked -->
+          <div class="oversigt-besked">
+            <i class="fa-regular fa-heart"></i>
+
+            <div>
+              <h4>Din donation gør en forskel for et barn og dets familie.</h4>
+
+              <p>
+                De ting du donerer, får et nyt liv hos familier, der har brug
+                for ekstra støtte i en svær tid.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HØJRE KOLONNE -->
+        <div class="aflevering-kort">
+          <h2>Afleveringsoplysninger</h2>
+
+          <form id="donation-form">
+            <!-- 1. AFLEVERINGSSTED -->
+            <div class="formular-gruppe">
+              <label class="felt-overskrift"> 1. Afleveringssted </label>
+
+              <div class="afleveringssted-felt">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>City Shoppen, 5000 Odense</span>
+              </div>
+
+              <p class="hjaelpetekst">
+                Pakken skal afleveres senest 7 dage efter bekræftelse.
+              </p>
+            </div>
+
+            <!-- 2. MAIL -->
+            <div class="formular-gruppe">
+              <label for="email" class="felt-overskrift">
+                2. Hvor skal vi sende din QR-kode?
+              </label>
+
+              <div class="email-felt">
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Skriv din mail her"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <p class="hjaelpetekst">
+                Du skal bruge QR-koden, når du afleverer din pakke.
+              </p>
+
+              <p id="fejlbesked" class="fejlbesked" role="alert"></p>
+            </div>
+
+            <!-- 3. PAKKEGUIDE -->
+            <div class="formular-gruppe pakke-gruppe">
+              <h3 class="felt-overskrift">3. Sådan pakker du din donation</h3>
+
+              <div class="pakke-guide">
+                <p>
+                  Pak tøjet forsvarligt i en pose eller kasse, så det er
+                  beskyttet under transporten. Sørg for, at tøjet er rent, tørt
+                  og i god stand. Luk pakken godt til, og vær sikker på, at
+                  indholdet passer til det ønskede.
+                </p>
+
+                <p>
+                  Når du har pakket tøjet, skal du blot fremvise din QR-kode ved
+                  det valgte indleveringssted.
+                </p>
+              </div>
+            </div>
+
+            <!-- BEKRÆFTELSE -->
+            <div class="formular-bund">
+              <div class="qr-info">
+                <i class="fa-solid fa-circle-info"></i>
+
+                <p>
+                  Når du har bekræftet din donation, modtager du en QR-kode på
+                  mail, som skal bruges ved aflevering af pakken.
+                </p>
+              </div>
+
+               <button class="bekraeft-knap"><a href="../tak-genstand-mappe/pige-sko-tak.html">
+                Bekræft donation
+                <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

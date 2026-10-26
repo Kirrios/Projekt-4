@@ -123,7 +123,7 @@ a {
 
 /* HERO SEKTION */
 
-.hero {
+/* .hero {
   text-align: center;
   margin-top: 75px;
 }
@@ -148,17 +148,26 @@ a {
   font-size: 26px;
   font-weight: 400;
   margin-top: 15px;
+} */
+
+
+.mother-img{
+  height:auto;
+ width: 400px;
+float: right;
+border-radius: 20px;
+margin: 20px;
 }
 
 /* DONATIONSKORT */
 
 .donation-container {
-  max-width: 950px;
-  margin: 45px auto 0;
+  max-width: 750px;
+  margin: 20px auto 0;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 30px;
 }
 
 .donation-card {
@@ -186,7 +195,7 @@ a {
 /* Baggrund på kort */
 
 .money-card {
-  background-color: #fff9b8;
+  background-color: #ffffff;
 }
 
 .item-card {
@@ -359,14 +368,22 @@ a {
 margin: 2em;
 } 
 
-#go-back{
-  background: none;
+.tilbage-link{
+   background: none;
   border: none;
   padding: 2em;
   margin-left: 6em;
   color: #002E4B; 
   text-decoration: none; 
 }
+
+#go-back{
+  background: 00000000;
+  border: none;
+  
+  color: #002E4B; 
+  text-decoration: none; 
+} 
 
 
 
