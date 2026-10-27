@@ -24,10 +24,13 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/bekræftgenstand.css" />
     <link rel="stylesheet" href="Penge-donation.closeup.css"/>
+     <link rel="stylesheet" href="sliders-stylig-css"/>
+  
 
     <!-- JavaScript -->
     <script src="../bekræftgenstand.js" defer></script>
     <script src="penge-donation-closeup.js" defer></script>
+      <script src="/Doner-penge-js.js" defer></script>
   </head>
 
   <body>
@@ -98,15 +101,19 @@
           <!-- Billede -->
           <div class="oversigt-billede">
             <div class="sko-billede">
-              <img src="/pengedonation/Billeder-til-penge-donation/blue-cake.png" alt="Fødesldagsgaver" />
+              <img src="/pengedonation/Billeder-til-penge-donation/pink-cake.png" alt="Fødesldagsgaver" />
             </div>
           </div>
 
-          <h3>Sko str. 20</h3>
+          <h3>Fødselsdagsgaver</h3>
 
           <div class="oversigt-divider"></div>
 
-          
+
+           <div class="slider-base">
+        <div class="slider-bar" id="slider-1"></div>
+          </div>
+
 
           <!-- Pink besked -->
           <div class="oversigt-besked">
@@ -247,7 +254,6 @@
 
 
 
-
 <div class="mobilepay-container" id="mobilePay" style="display: none;">
 
 
@@ -258,10 +264,9 @@
 <div class="mobilepay-p">
 <p>Når du klikker på bekræft donation, bliver du sendt videre til MobilePay for at godkende betaling.</p>
 </div>
-
 </div>
 
-</div>
+
 <div class="input-mobilepay">
 
     <h3>Telefonnummer</h3>
@@ -269,10 +274,9 @@
     placeholder="Telefonnummer"
 
     required
-    
+  
     />
-   <p>Indtast nummeret, der er knyttet til MobilePay.</p> 
-
+   
    
     <h3>Hvor kan vi sende bekræftigelsen?</h3>
      <input
@@ -285,15 +289,14 @@
                 />
 
 
-
-
-
+</div>
 </div>
 
-              <button type="submit" class="bekraeft-knap">
+              <button class="bekraeft-knap"><a href="/penge-tak.html">
                 Bekræft donation
                 <i class="fa-solid fa-arrow-right"></i>
-              </button>
+                </a>
+                </button>
             </div>
        
         </div>

@@ -15,7 +15,7 @@ h3{
     margin-left: 20px;
 }
 p{
-    font-size: 15px;
+    font-size: 20px;
     padding: none;
     margin-left: 20px;
 }
@@ -244,9 +244,10 @@ display: flex;
     border-radius: 20px;
     margin: 15px;
     padding: 10px;
-    
+    max-width: 100%;
 
 }
+
 
 .input-mobilepay{
     margin: 10px;
@@ -263,7 +264,9 @@ padding-right: 10px;
 
     margin-left: 5px;
     margin-right: 10px;
+    margin-bottom: 10px;
     float: left;
+
 }
 .input-mobilepay p{
     margin: 10px;
@@ -272,6 +275,7 @@ padding-right: 10px;
 h3{
     font-size: 15px;
     margin: 10px;
+    justify-self: left;
 }
 
 .bekraeft-knap{
