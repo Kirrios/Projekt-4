@@ -51,7 +51,7 @@ window.addEventListener('load', function() {
     
         document.querySelector("img.imagePlaceholder__box").addEventListener("click", function(){
             if (b1.className == "choice-button-unselected") {
-                // --- if u are in the "genstand", stay in "genstand" ---
+                // --- if u are in the "genstand":
             window.location = "opslag-billeder-genstande.html";
             } else {
                 window.location = "opslag-billeder-tilskud.html";
