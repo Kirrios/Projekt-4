@@ -2,6 +2,7 @@ let container = document.querySelector(".genstande-donation-grid");
 
 // --- image selection ---
 container.addEventListener("click", function(event){
+    submitButton.classList.remove("brug-billede-inaktiv");
     // console.log(event.target, event.target.parentNode.classList.contains("genstande-item"))
     // --- if clicked element contains the class "genstande-item": ---
     if (event.target.classList.contains("genstande-item")) {
@@ -13,6 +14,7 @@ container.addEventListener("click", function(event){
         };
         
         event.target.classList.add("item-selected");
+        submitButton.classList.add("brug-billede-aktiv");
     };
 });
 
@@ -27,8 +29,6 @@ submitButton.addEventListener("click", function() {
         localStorage.setItem("selectedItem", selected.src);
 
         // ---! ask for help !---
-        submitButton.classList.remove(".brug-billede-inaktiv");
-        submitButton.classList.add(".brug-billede-aktiv");
         window.location = "opret-opslag.html";
     }
 });
