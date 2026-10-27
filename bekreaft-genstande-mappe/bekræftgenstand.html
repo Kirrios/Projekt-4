@@ -22,10 +22,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../bekræftgenstand.css" />
+    <link rel="stylesheet" href="bekræftgenstand.css" />
 
     <!-- JavaScript -->
-    <script src="./bekræftgenstand.js" defer></script>
+    <script src="bekræftgenstand.js" defer></script>
   </head>
 
   <body>
@@ -43,15 +43,15 @@
         </div>
 
         <a href="index.html" class="logo">
-          <img src="./billeder/logo.png" alt="Mødrehjælpens logo" />
+          <img src="../billeder/logo.png" alt="Mødrehjælpens logo" />
         </a>
 
         <div class="nav-right">
-          <button class="icon-button" aria-label="Min profil">
+          <a href="login.html" class="icon-button" aria-label="Min profil">
             <i class="fa-regular fa-user"></i>
-          </button>
+          </a>
 
-          <a href="donationpenge.html" class="support-button"> Støt nu </a>
+          <a href="tilbage-til-mødrehjaelp-route.html" class="support-button">Hjem til mødrehjælp</a>
         </div>
       </nav>
     </header>
@@ -59,9 +59,10 @@
     <main class="bekraeft-side">
       <!-- TILBAGE OG PROGRESS BAR -->
       <div class="top-linje">
-        <a href="donationgenstand.html" class="tilbage-link">
+        <a href="/donationgenstand.html" class="tilbage-link">
           <i class="fa-solid fa-arrow-left"></i>
-          Tilbage til donation </a>
+          Tilbage til donation
+        </a>
 
         <!-- Trinindikator -->
         <div class="trin-container">
@@ -95,11 +96,11 @@
           <!-- Billede -->
           <div class="oversigt-billede">
             <div class="sko-billede">
-              <img src="../genstand-donation/Billeder-til-doner-genstand/carrier-cream.png" alt="barnevogn" />
+              <img src="../billeder/drengesko1.png" alt="Blå sko til dreng" />
             </div>
           </div>
 
-          <h3>Barnevogn</h3>
+          <h3>Sko str. 28</h3>
 
           <div class="oversigt-divider"></div>
 
@@ -219,12 +220,11 @@
                 </p>
               </div>
 
-
-              <button class="bekraeft-knap"><a href="../tak-barnevogn-cream.html">
+               <button class="bekraeft-knap"><a href="../tak-genstand-mappe/takgenstand.html">
                 Bekræft donation
-                <!-- <i class="fa-solid fa-arrow-right"></i></button>
-              <button type="submit" class="bekraeft-knap" 
-              </button> -->
+                <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </button>
             </div>
           </form>
         </div>
