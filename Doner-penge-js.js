@@ -55,12 +55,7 @@ window.addEventListener('load', function() {
 //  --- price tables (the goal and current status) ---
     let funds = [ {price: 100, reached: 20},
                   {price: 300, reached: 50},
-                  {price: 100, reached: 80},
                   {price: 300, reached: 0},
-                  {price: 400, reached: 40},
-                  {price: 250, reached: 19},
-                  {price: 200, reached: 27},
-                  {price: 100, reached: 68},
                 ]
 
 // --- Function looks at id and the calculated percentage, and resizes the bar to match ---
