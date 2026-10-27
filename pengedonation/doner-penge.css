@@ -243,3 +243,17 @@ display: none;
   price{
   font-size: 10px;
 }
+
+.tilbage-link{
+   background: none;
+  border: none;
+  padding: 2em;
+  margin-left: 6em;
+  color: #002E4B; 
+  text-decoration: none; 
+}
+
+
+#go-back{
+  display: none;
+}
